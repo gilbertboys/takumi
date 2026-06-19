@@ -1,0 +1,66 @@
+<section class="dashboard">
+	<h1>Manager Orders Dashboard</h1>
+
+	<form method="GET" action="/manager-dashboard" class="filter-form">
+		<label for="city">City:</label>
+		<select id="city" name="city">
+			<option value="All" {{#if (eq cityFilter 'All')}}selected{{/if}}>All Cities</option>
+			<option value="Hillsboro" {{#if (eq cityFilter 'Hillsboro')}}selected{{/if}}>Hillsboro</option>
+			<option value="Provo" {{#if (eq cityFilter 'Provo')}}selected{{/if}}>Provo</option>
+			<option value="Jackson" {{#if (eq cityFilter 'Jackson')}}selected{{/if}}>Jackson</option>
+		</select>
+		<label for="delivery">
+			<input id="delivery" name="delivery" type="checkbox" {{#if deliveryOnly}}checked{{/if}}>
+			Delivery Only
+		</label>
+		<button type="submit">Filter</button>
+	</form>
+
+	<div class="summary">
+		<p>Total Orders: {{orderCount}}</p>
+		<p>Total Revenue: ${{totalRevenue}}</p>
+		<p>Delivery Orders: {{deliveryCount}}</p>
+		<p>Average Order Total: ${{averageOrderTotal}}</p>
+	</div>
+
+	{{#if orders.length}}
+		<ul class="orders-list">
+			{{#each orders}}
+				<li class="order-card">
+					<p><strong>Date:</strong> {{date}}</p>
+					{{#if ../showCity}}
+						<p><strong>City:</strong> {{city}}</p>
+					{{/if}}
+					<p><strong>Delivery:</strong> {{#if delivery}}Yes{{else}}No{{/if}}</p>
+					<div>
+						<strong>Entrees:</strong>
+						<ul>
+							{{#each entrees}}
+								<li>{{quantity}} x {{name}}</li>
+							{{/each}}
+						</ul>
+					</div>
+					<div>
+						<strong>Drinks:</strong>
+						<ul>
+							{{#each drinks}}
+								<li>{{quantity}} x {{name}}</li>
+							{{/each}}
+						</ul>
+					</div>
+					<div>
+						<strong>Desserts:</strong>
+						<ul>
+							{{#each desserts}}
+								<li>{{quantity}} x {{name}}</li>
+							{{/each}}
+						</ul>
+					</div>
+					<p><strong>Total:</strong> ${{total}}</p>
+				</li>
+			{{/each}}
+		</ul>
+	{{else}}
+		<p>No orders found for this filter.</p>
+	{{/if}}
+</section>

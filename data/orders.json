@@ -1,0 +1,152 @@
+[
+	{
+		"date": "2026-05-20",
+		"city": "Hillsboro",
+		"delivery": true,
+		"entrees": [
+			{ "name": "Salmon Teriyaki", "quantity": 1 },
+			{ "name": "California Roll", "quantity": 2 }
+		],
+		"drinks": [
+			{ "name": "Tea", "quantity": 2 }
+		],
+		"desserts": [
+			{ "name": "Mochi", "quantity": 1 }
+		],
+		"total": 39.49
+	},
+	{
+		"date": "2026-05-21",
+		"city": "Provo",
+		"delivery": false,
+		"entrees": [
+			{ "name": "Chicken Katsu", "quantity": 1 }
+		],
+		"drinks": [
+			{ "name": "Coffee", "quantity": 1 }
+		],
+		"desserts": [],
+		"total": 19.50
+	},
+	{
+		"date": "2026-05-21",
+		"city": "Jackson",
+		"delivery": true,
+		"entrees": [
+			{ "name": "Waikiki Roll", "quantity": 2 }
+		],
+		"drinks": [
+			{ "name": "Soda", "quantity": 2 }
+		],
+		"desserts": [
+			{ "name": "Green Tea Ice Cream", "quantity": 1 }
+		],
+		"total": 43.49
+	},
+	{
+		"date": "2026-05-22",
+		"city": "Hillsboro",
+		"delivery": false,
+		"entrees": [
+			{ "name": "Spicy Tuna Roll", "quantity": 3 }
+		],
+		"drinks": [
+			{ "name": "Tea", "quantity": 1 }
+		],
+		"desserts": [
+			{ "name": "Fruit Tart", "quantity": 1 }
+		],
+		"total": 30.75
+	},
+	{
+		"date": "2026-05-22",
+		"city": "Provo",
+		"delivery": true,
+		"entrees": [
+			{ "name": "Salmon Teriyaki", "quantity": 1 },
+			{ "name": "California Roll", "quantity": 1 }
+		],
+		"drinks": [
+			{ "name": "Juice", "quantity": 1 }
+		],
+		"desserts": [
+			{ "name": "Mochi", "quantity": 1 }
+		],
+		"total": 35.49
+	},
+	{
+		"date": "2026-05-23",
+		"city": "Jackson",
+		"delivery": false,
+		"entrees": [
+			{ "name": "Chicken Katsu", "quantity": 2 }
+		],
+		"drinks": [
+			{ "name": "Coffee", "quantity": 2 }
+		],
+		"desserts": [],
+		"total": 39.00
+	},
+	{
+		"date": "2026-05-24",
+		"city": "Hillsboro",
+		"delivery": true,
+		"entrees": [
+			{ "name": "Waikiki Roll", "quantity": 1 },
+			{ "name": "Spicy Tuna Roll", "quantity": 1 }
+		],
+		"drinks": [
+			{ "name": "Soda", "quantity": 1 }
+		],
+		"desserts": [
+			{ "name": "Green Tea Ice Cream", "quantity": 1 }
+		],
+		"total": 31.99
+	},
+	{
+		"date": "2026-05-25",
+		"city": "Provo",
+		"delivery": false,
+		"entrees": [
+			{ "name": "Salmon Teriyaki", "quantity": 2 }
+		],
+		"drinks": [
+			{ "name": "Tea", "quantity": 2 }
+		],
+		"desserts": [
+			{ "name": "Fruit Tart", "quantity": 1 }
+		],
+		"total": 53.23
+	},
+	{
+		"date": "2026-05-26",
+		"city": "Jackson",
+		"delivery": true,
+		"entrees": [
+			{ "name": "California Roll", "quantity": 3 }
+		],
+		"drinks": [
+			{ "name": "Juice", "quantity": 2 }
+		],
+		"desserts": [
+			{ "name": "Mochi", "quantity": 2 }
+		],
+		"total": 45.00
+	},
+	{
+		"date": "2026-05-27",
+		"city": "Hillsboro",
+		"delivery": false,
+		"entrees": [
+			{ "name": "Chicken Katsu", "quantity": 1 },
+			{ "name": "Spicy Tuna Roll", "quantity": 1 }
+		],
+		"drinks": [
+			{ "name": "Coffee", "quantity": 1 }
+		],
+		"desserts": [
+			{ "name": "Green Tea Ice Cream", "quantity": 1 }
+		],
+		"total": 33.49
+	}
+]

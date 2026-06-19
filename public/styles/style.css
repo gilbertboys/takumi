@@ -1,0 +1,144 @@
+/* 
+  Byte Bistro Base Stylesheet 
+
+  This stylesheet is provided to keep your pages readable and consistent.
+
+  Do not modify or add new CSS rules for Activity 3 or HW1.
+  You will begin customizing styles in a later assignment.
+*/
+
+/* ----- Page Layout ----- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* ----- Header ----- */
+header {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #dc4405;
+}
+
+h1 {
+  font-size: 32px;
+  color: #3a3a3a;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 24px;
+  color: #dc4405;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ----- Navigation (layout only — styling later) ----- */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #006699;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Tables ----- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+/* ----- Images ----- */
+img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* ----- Forms (used in next activity) ----- */
+form {
+  margin-top: 1em;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background-color: #dc4405;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #b63604;
+}
+
+/* ----- Footer ----- */
+footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #666;
+}

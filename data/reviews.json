@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Seth Looney",
+    "city": "Hillsboro",
+    "rating": 5,
+    "title": "So good!",
+    "comment": "I loved it, the sushi was very fresh and the service was great!"
+  },
+  {
+    "name": "Quinn McNamee",
+    "city": "Hillsboro",
+    "rating": 2,
+    "title": "Ok",
+    "comment": "I spilled soy sauce all over myself so it ruined the experience, but I guess the sushi was good."
+  },
+  {
+    "name": "Daniel McSandle",
+    "city": "Jackson",
+    "rating": 4,
+    "title": "Yummy but expensive",
+    "comment": "Best sushi I've ever had, but wow those prices are high."
+  }
+]

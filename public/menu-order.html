@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Takumi Sushi & Sake Bar - Interactive Menu</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/style-custom-munlyj.css">
+	<link rel="stylesheet" href="styles/style-menu-munlyj.css">
+</head>
+<body>
+	<header>
+		<h1>Takumi Sushi & Sake Bar</h1>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+                <li><a class="active" href="menu-order.html">Interactive Order</a></li>
+				<li><a href="/manager-dashboard">Manager Dashboard</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="main-layout">
+			<section class="menu-section">
+				<h2>Interactive Menu</h2>
+
+				<h2>Entrees</h2>
+				<section class="menu-grid entree-grid">
+					<div class="menu-item" data-category="entree" data-name="Salmon Teriyaki" data-price="18.99">
+						<img src="images/salmon.jpg" alt="Salmon Teriyaki">
+						<h3>Salmon Teriyaki</h3>
+						<p>Fresh Atlantic salmon grilled with herbs.</p>
+						<p class="price">$18.99</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="entree" data-name="Chicken Katsu" data-price="16.50">
+						<img src="images/katsu.jpg" alt="Chicken Katsu">
+						<h3>Chicken Katsu</h3>
+						<p>Golden breaded chicken with salad and rice.</p>
+						<p class="price">$16.50</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="entree" data-name="Waikiki Roll" data-price="15.00">
+						<img src="images/sushi.jpg" alt="Waikiki Roll">
+						<h3>Waikiki Roll</h3>
+						<p>Thick ahi tuna with jalapenos.</p>
+						<p class="price">$15.00</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="entree" data-name="California Roll" data-price="7.00">
+						<img src="images/caliroll.jpg" alt="California Roll">
+						<h3>California Roll</h3>
+						<p>Crab, avocado, and cucumber.</p>
+						<p class="price">$7.00</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="entree" data-name="Spicy Tuna Roll" data-price="7.00">
+						<img src="images/spicytuna.jpg" alt="Spicy Tuna Roll">
+						<h3>Spicy Tuna Roll</h3>
+						<p>Tuna with spicy mayo.</p>
+						<p class="price">$7.00</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+				</section>
+
+				<h2>Beverages</h2>
+				<section class="menu-grid beverage-grid">
+					<div class="menu-item" data-category="beverage" data-name="Coffee" data-price="3.00">
+						<img src="images/coffee.jpg" alt="Coffee">
+						<h3>Coffee</h3>
+						<p>Freshly brewed house roast.</p>
+						<p class="price">$3.00</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="beverage" data-name="Tea" data-price="2.50">
+						<img src="images/tea.jpg" alt="Tea">
+						<h3>Tea</h3>
+						<p>Green tea served hot or iced.</p>
+						<p class="price">$2.50</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="beverage" data-name="Soda" data-price="2.75">
+						<img src="images/soda.jpg" alt="Soda">
+						<h3>Soda</h3>
+						<p>Assorted flavors, chilled.</p>
+						<p class="price">$2.75</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+				</section>
+
+				<h2>Desserts</h2>
+				<section class="menu-grid dessert-grid">
+					<div class="menu-item" data-category="dessert" data-name="Green Tea Ice Cream" data-price="6.99">
+						<img src="images/dessert1.jpg" alt="Green Tea Ice Cream">
+						<h3>Green Tea Ice Cream</h3>
+						<p>Matcha flavored ice cream.</p>
+						<p class="price">$6.99</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="dessert" data-name="Mochi" data-price="5.50">
+						<img src="images/dessert2.jpg" alt="Mochi">
+						<h3>Mochi</h3>
+						<p>Soft rice cakes with ice cream.</p>
+						<p class="price">$5.50</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+
+					<div class="menu-item" data-category="dessert" data-name="Fruit Tart" data-price="7.25">
+						<img src="images/dessert3.jpg" alt="Fruit Tart">
+						<h3>Fruit Tart</h3>
+						<p>Fresh fruit on a pastry base.</p>
+						<p class="price">$7.25</p>
+
+						<div class="input-controls">
+							<input type="number" class="qty-input" min="1">
+							<button class="confirm-btn" type="button">OK</button>
+							<button class="remove-btn" type="button">X</button>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<aside class="side-bar">
+				<section class="live-order">
+					<h2>Live Order</h2>
+
+					<h3>Entrees</h3>
+					<ul id="entree-list"></ul>
+
+					<h3>Beverages</h3>
+					<ul id="beverage-list"></ul>
+
+					<h3>Desserts</h3>
+					<ul id="dessert-list"></ul>
+				</section>
+
+				<section class="order-form-section">
+					<h2>Order Details</h2>
+					<form id="order-form" method="post" action="menu-order.php" target="_blank">
+						<fieldset>
+							<legend>Customer Info</legend>
+							<label for="customerName">Name:</label>
+							<input type="text" id="customerName" name="customerName" placeholder="Jane Doe" required>
+							<label for="phone">Phone Number:</label>
+							<input type="tel" id="phone" name="phone" placeholder="541-123-4567">
+						</fieldset>
+
+						<fieldset>
+							<legend>Add-ons</legend>
+							<label>
+								<input type="checkbox" name="addOns" value="extra ginger and wasabi" data-price="1.00"> Extra ginger and wasabi (+$1.00)
+							</label>
+							<label>
+								<input type="checkbox" name="addOns" value="miso soup" data-price="2.00"> Miso soup (+$2.00)
+							</label>
+							<label>
+								<input type="checkbox" name="addOns" value="side of rice" data-price="3.00"> Side of rice (+$3.00)
+							</label>
+							<label>
+								<input type="checkbox" name="addOns" value="chopsticks" data-price="0"> Chopsticks
+							</label>
+							<label>
+								<input type="checkbox" name="addOns" value="napkins" data-price="0"> Napkins
+							</label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Dining Method</legend>
+							<label>
+								<input type="radio" name="diningMethod" value="pickup" checked> Pick-up
+							</label>
+							<label>
+								<input type="radio" name="diningMethod" value="delivery"> Delivery
+							</label>
+							<label>
+								<input type="radio" name="diningMethod" value="eat-in"> Eat-in
+							</label>
+						</fieldset>
+
+						<fieldset>
+							<legend>City</legend>
+							<label>
+								<input type="radio" name="city" value="Hillsboro" checked> Hillsboro
+							</label>
+							<label>
+								<input type="radio" name="city" value="Provo"> Provo
+							</label>
+							<label>
+								<input type="radio" name="city" value="Jackson"> Jackson
+							</label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Tip</legend>
+							<label for="tipPercent">Tip:</label>
+							<select id="tipPercent" name="tipPercent">
+								<option value="0">No tip</option>
+								<option value="10">10%</option>
+								<option value="15" selected>15%</option>
+								<option value="18">18%</option>
+								<option value="20">20%</option>
+								<option value="25">25%</option>
+							</select>
+						</fieldset>
+
+						<fieldset>
+							<legend>Pickup or Delivery Time</legend>
+							<label for="time">Pick-up/Delivery Time:</label>
+							<input type="time" id="time" name="time" required>
+							<label for="instructions">Special Instructions:</label>
+							<textarea id="instructions" name="instructions"></textarea>
+						</fieldset>
+
+						<input type="hidden" id="orderJson" name="orderJson" value="[]">
+						<input type="hidden" id="taxRate" name="taxRate" value="0">
+						<button type="button" id="previewBtn">Preview Receipt</button>
+						<input type="submit" value="Submit Order">
+					</form>
+					<pre id="receiptOutput"></pre>
+				</section>
+			</aside>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2026 TAKUMI</p>
+		<p>Created by: Jacob Munly</p>
+	</footer>
+	<script src="js/process-orders.js" defer></script>
+	<script src="js/menu-interact.js" defer></script>
+</body>
+</html>

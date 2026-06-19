@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takumi Sushi & Sake Bar - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-custom-munlyj.css">
+    <link rel="stylesheet" href="styles/weather-map-style.css">
+</head>
+<body>
+    <header>
+        <h1>Takumi Sushi & Sake Bar</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="menu-order.html">Interactive Order</a></li>
+                <li><a href="/manager-dashboard">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home-layout">
+            <section class="home-left">
+                <div class="welcome-block">
+                    <h2>Welcome to Takumi Sushi & Sake Bar</h2>
+                    <p class="hero-intro">Fresh sushi, warm hospitality, and a quick pickup flow when you need it.</p>
+                    <div class="hero-actions">
+                        <a class="hero-cta" href="menu-order.html">Start Interactive Order</a>
+                        <a class="hero-link" href="menu.html">View Full Menu</a>
+                    </div>
+                </div>
+
+                <div class="hours-display">
+                    <h3>Hours & Delivery</h3>
+                    <p id="weekday-hours">Monday - Friday: 12:00 PM - 2:00 PM, 4:00 PM - 9:00 PM</p>
+                    <p id="weekend-hours">Saturday - Sunday: 12:00 PM - 9:00 PM</p>
+                    <p>Delivery available within local service areas.</p>
+                    <p>Call ahead or order online for faster pickup.</p>
+                </div>
+
+                <div class="map-display">
+                    <input type="radio" name="city" id="city-city1" checked>
+                    <label for="city-city1">Hillsboro</label>
+
+                    <input type="radio" name="city" id="city-city2">
+                    <label for="city-city2">Provo</label>
+
+                    <input type="radio" name="city" id="city-city3">
+                    <label for="city-city3">Jackson</label>
+
+                    <div class="map-box">
+                        <div class="map-label" id="map-address">2215 Allie Ave, Hillsboro, OR</div>
+                        <a id="map-link" href="https://www.google.com/maps/d/u/0/edit?mid=1BdFxIR_eEmcD8hqfK-x64GYckSMdSnI&usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img id="map-image" src="images/hillsboromap.png" alt="Map of Hillsboro" class="city-map">
+                        </a>
+                        <div class="weather-display">
+                            <img id="weather-icon" src="images/cloudyday.png" alt="Weather icon">
+                            <span id="temperature">72°F</span>
+                            <div id="bistro-status">Bistro status loading...</div>
+                            <div id="patio-status">Patio status loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="home-right">
+                <img src="images/restaurant.jpg" alt="Takumi Sushi & Sake Bar" class="restaurant-image">
+                <section class="chef-tip">
+                    <h3>Chef's Tip</h3>
+                    <p>Try our signature Grilled Salmon for a healthy and delicious meal!</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 TAKUMI</p>
+        <p>Created by: Jacob Munly</p>
+    </footer>
+    <script src="js/weather-time.js" defer></script>
+</body>
+</html>

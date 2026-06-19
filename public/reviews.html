@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takumi Sushi & Sake Bar - Reviews</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-custom-munlyj.css">
+</head>
+<body>
+    <header>
+        <h1>Takumi Sushi & Sake Bar</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a class="active" href="reviews.html">Reviews</a></li>
+                <li><a href="menu-order.html">Interactive Order</a></li>
+                <li><a href="/manager-dashboard">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="reviews-layout">
+            <section class="reviews-feed">
+                <h2>Customer Reviews</h2>
+                <div id="reviewList" class="review-list"></div>
+            </section>
+            <section class="review-form">
+                <h2>Leave a Review</h2>
+                <form id="reviewForm">
+                    <fieldset>
+                        <legend>Share Your Experience</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="city">City</label>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected>Select a location</option>
+                            <option value="Hillsboro">Hillsboro</option>
+                            <option value="Provo">Provo</option>
+                            <option value="Jackson">Jackson</option>
+                        </select>
+
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating" required>
+                            <option value="" disabled selected>Select stars</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Great</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Needs work</option>
+                        </select>
+
+                        <label for="title">Review Title</label>
+                        <input type="text" id="title" name="title" required>
+
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" rows="5" required></textarea>
+
+                        <input type="submit" value="Submit Review">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 TAKUMI</p>
+        <p>Created by: Jacob Munly</p>
+    </footer>
+    <script src="js/reviews.js" defer></script>
+</body>
+</html></content>

@@ -1,0 +1,106 @@
+/* Interactive menu layout and selection styles */
+
+.main-layout {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+}
+
+.menu-section {
+	flex: 3;
+}
+
+.side-bar {
+	flex: 1;
+	position: sticky;
+	top: 1rem;
+	border: 2px solid #006699;
+	border-radius: 12px;
+	padding: 1rem;
+	background-color: #f7f9fb;
+}
+
+.order-form-section {
+	margin-top: 1.5rem;
+	border-top: 2px solid #006699;
+	padding-top: 1rem;
+}
+
+.live-order ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0.5rem;
+}
+
+.menu-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	margin-bottom: 24px;
+	padding: 1rem;
+}
+
+.menu-item {
+	border: 2px solid #e6e7e8;
+	padding: 1rem;
+	border-radius: 12px;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+	background-color: #ffffff;
+}
+
+.menu-item.selected {
+	border-color: #006699;
+	background-color: #e8f4f8;
+}
+
+.menu-item img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 0.75rem;
+}
+
+.menu-item .price {
+	font-weight: bold;
+	color: #dc4405;
+	margin-top: 0.5rem;
+}
+
+.input-controls {
+	margin-top: 0.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.qty-input {
+	margin-top: 6px;
+	width: 70px;
+	padding: 6px;
+	display: none;
+}
+
+.confirm-btn,
+.remove-btn {
+	width: 28px;
+	height: 28px;
+	margin-left: 6px;
+	padding: 0;
+	border: 1px solid #006699;
+	border-radius: 50%;
+	background-color: #ffffff;
+	font-size: 14px;
+	cursor: pointer;
+	display: none;
+}
+
+.confirm-btn:hover {
+	background-color: #16e121;
+}
+
+.remove-btn:hover {
+	background-color: #b91421;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takumi Sushi & Sake Bar - Order</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-custom-munlyj.css">
+</head>
+<body>
+    <header>
+        <h1>Takumi Sushi & Sake Bar</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a class="active" href="order.html">Order</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="menu-order.html">Interactive Order</a></li>
+                <li><a href="/manager-dashboard">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Place Your Order</h2>
+        <form method="post" action="order.php">
+            <fieldset>
+                <legend>Customer Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="541-123-4567">
+            </fieldset>
+            <fieldset>
+                <legend>Food Order</legend>
+                <label for="entree">Entrée:</label>
+                <select id="entree" name="entree">
+                    <option value="" disabled selected>Choose an entrée</option>
+                    <option value="Salmon Teriyaki">Salmon Teriyaki</option>
+                    <option value="Chicken Katsu">Chicken Katsu</option>
+                    <option value="Waikiki Roll">Waikiki Roll</option>
+                    <option value="California Roll">California Roll</option>
+                    <option value="Spicy Tuna Roll">Spicy Tuna Roll</option>
+                </select>
+                <br>
+                <label for="beverage">Beverage:</label>
+                <select id="beverage" name="beverage">
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Soda">Soda</option>
+                    <option value="Juice">Juice</option>
+                </select>
+                <br>
+                <label for="dessert">Dessert:</label>
+                <select id="dessert" name="dessert">
+                    <option value="Green Tea Ice Cream">Green Tea Ice Cream</option>
+                    <option value="Mochi">Mochi</option>
+                    <option value="Fruit Tart">Fruit Tart</option>
+                </select>
+                <br>
+                <label>Add-ons:</label>
+                <label for="extra_sauce"><input type="checkbox" id="extra_sauce" name="addons[]" value="Extra Sauce"> Extra Sauce</label>
+                <label for="chopsticks"><input type="checkbox" id="chopsticks" name="addons[]" value="Chopsticks"> Chopsticks</label>
+                <label for="napkins"><input type="checkbox" id="napkins" name="addons[]" value="Napkins"> Napkins</label>
+                <label for="utensils"><input type="checkbox" id="utensils" name="addons[]" value="Utensils"> Utensils</label>
+                <br>
+                <label for="total">Total:</label>
+                <input type="text" id="total" name="total" value="$0.00" readonly>
+            </fieldset>
+            <fieldset>
+                <legend>Dining Preferences</legend>
+                <label>Dining Method:</label>
+                <label for="pickup"><input type="radio" id="pickup" name="dining" value="pickup"> Pick-up</label>
+                <label for="delivery"><input type="radio" id="delivery" name="dining" value="delivery"> Delivery</label>
+                <label for="eat-in"><input type="radio" id="eat-in" name="dining" value="eat-in"> Eat-in</label>
+                <br>
+                <label for="time">Pick-up/Delivery Time:</label>
+                <input type="time" id="time" name="time" required>
+                <br>
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit Order">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 TAKUMI</p>
+        <p>Created by: Jacob Munly</p>
+    </footer>
+</body>
+</html>
